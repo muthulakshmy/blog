@@ -2,14 +2,37 @@ import React from 'react';
 
 
 const Content = () => {
+    // const body=['title1', 'title2']
+    // const author='Arthur'
+    const data=[
+    {
+        title:'blog 1',
+        author:'Arthur'
+    },{
+        title:'blog 2',
+        author:'Arjun'
+
+    },
+    {
+        title:'blog 3',
+        author:'Adhav'
+
+    }
+]
+
     return (
         <div className='content'>
-            <h1>Opening Party!</h1>
-            <p>written by yoshi</p>
-            <h1>Welcome to the New Blog</h1>
-            <p>written by mario</p>
+               {data.map(item => {
+                    return (
+                        <div className='data'>
+                        <h1>{item.title}</h1>
+                        <p>{item.author}</p>
+                        </div>
+                    )
+                })}
           
         </div>
+                
     )
 }
 

@@ -9,7 +9,6 @@ function App() {
       <Navbar />
       <hr />
       <Content />
-     
     </div>
   );
 }
